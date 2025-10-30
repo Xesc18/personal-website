@@ -357,7 +357,7 @@ body::before {
   text-align: center;
   color: white;
   overflow: hidden;
-  background: url("img/Portada3.gif") center/cover no-repeat fixed;
+  background: url("https://i.pinimg.com/originals/10/45/e0/1045e0141aadc7fc057260054ac8a451.gif") center/cover no-repeat fixed;
 }
 
 /* Sutil filtro oscuro encima para que el texto siempre se lea bien */
