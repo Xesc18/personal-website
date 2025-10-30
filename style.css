@@ -1,0 +1,426 @@
+/* ===== RESET ===== */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #1a1a1a, #2d3436);
+  color: #fff;
+  scroll-behavior: smooth;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(20, 20, 20, 0.8);
+  backdrop-filter: blur(10px);
+  padding: 12px 0;
+  z-index: 999;
+  transition: background 0.3s ease;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  list-style: none;
+  position: relative;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  padding-bottom: 5px;
+  position: relative;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #55efc4;
+}
+
+/* MARCADOR DESLIZANTE */
+.navbar-marker {
+  position: absolute;
+  bottom: 0;
+  height: 3px;
+  width: 0;
+  background: linear-gradient(90deg, #ff7675, #fdcb6e, #55efc4);
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* ===== HEADER ===== */
+header {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: radial-gradient(circle at top left, #2d3436, #000);
+}
+.nombre {
+  font-size: 3.2em;
+  background: linear-gradient(90deg, #ff7675, #fdcb6e, #55efc4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: moveGradient 5s infinite alternate;
+}
+.descripcion {
+  margin-top: 10px;
+  font-size: 1.1em;
+  opacity: 0.85;
+}
+@keyframes moveGradient {
+  0% { filter: brightness(1); }
+  50% { filter: brightness(1.4); }
+  100% { filter: brightness(1); }
+}
+
+/* ===== SECCIONES ===== */
+main { margin-top: 80px; }
+section {
+  padding: 80px 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+h2 {
+  font-size: 2em;
+  margin-bottom: 30px;
+  font-family: 'Nunito', sans-serif;
+  position: relative;
+  color: #fdcb6e;
+}
+h2::after {
+  content: "";
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(90deg, #ff7675, #fdcb6e, #55efc4);
+  display: block;
+  margin: 10px auto;
+  border-radius: 2px;
+}
+
+/* ===== PERSONALIDAD ===== */
+.infj-card {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 15px;
+  padding: 25px;
+  margin: 0 auto;
+  max-width: 600px;
+  backdrop-filter: blur(6px);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.infj-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 20px rgba(255, 118, 117, 0.3);
+}
+.infj-card .destacado {
+  color: #fdcb6e;
+  display: block;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+/* ===== TARJETAS ===== */
+.tarjetas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.tarjeta {
+  background: rgba(255,255,255,0.08);
+  border-radius: 15px;
+  padding: 20px;
+  width: 270px;
+  backdrop-filter: blur(8px);
+  transition: all 0.4s ease;
+}
+.tarjeta:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 25px rgba(255, 118, 117, 0.4);
+}
+.tarjeta img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.tarjeta h3 { 
+  color: #55efc4;
+  margin-bottom: 8px;
+}
+
+/* ===== BOTONES ===== */
+.btn-mas a, .btn-compra {
+  text-decoration: none;
+  color: #222;
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #ff7675, #fdcb6e, #55efc4);
+  font-weight: 600;
+  transition: transform 0.3s, opacity 0.3s;
+}
+.btn-mas a:hover, .btn-compra:hover {
+  transform: scale(1.1);
+  opacity: 0.9;
+}
+
+/* ===== LIBROS ===== */
+#libros ul { list-style: none; padding: 0; }
+#libros li {
+  background: rgba(255,255,255,0.08);
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 10px;
+  transition: background 0.3s;
+}
+#libros li:hover { background: rgba(255,255,255,0.25); }
+
+/* ===== FOOTER ===== */
+footer {
+  text-align: center;
+  padding: 40px;
+  background: rgba(0,0,0,0.5);
+}
+footer .chibis {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 10px;
+}
+footer .chibis img {
+  width: 80px;
+  animation: flotar 3s ease-in-out infinite;
+}
+@keyframes flotar {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .tarjeta { width: 90%; }
+  .navbar ul { flex-wrap: wrap; gap: 15px; }
+}
+
+/* ===== BOTÓN FIX ===== */
+button.btn-mas {
+  border: none;
+  background: transparent;
+  padding: 0;
+}
+button.btn-mas a {
+  background: linear-gradient(90deg, #ff7675, #fdcb6e, #55efc4);
+  color: #222;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  display: inline-block;
+  transition: transform 0.3s, opacity 0.3s;
+}
+button.btn-mas a:hover {
+  transform: scale(1.1);
+  opacity: 0.9;
+}
+
+/* ===== MODALES ===== */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.75);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.modal-content {
+  background: rgba(255,255,255,0.08);
+  border-radius: 15px;
+  padding: 20px;
+  max-width: 500px;
+  text-align: center;
+  backdrop-filter: blur(8px);
+  color: #fff;
+  position: relative;
+  border: 1px solid rgba(253,203,110,0.3);
+}
+.modal-content img {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+.modal .close {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 2em;
+  cursor: pointer;
+  color: #fdcb6e;
+}
+
+/* ===== SECCIÓN MÚSICA ===== */
+#musica .tarjeta audio {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+.btn-mas {
+  display: inline-block;
+  background: linear-gradient(90deg, #ff7675, #fdcb6e, #55efc4);
+  color: #222;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: 2px solid #fff;
+  transition: transform 0.3s, border-color 0.3s;
+}
+.btn-mas:hover {
+  transform: scale(1.1);
+  border-color: #ff7675;
+}
+.tarjetas-musica {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.tarjetas-musica .tarjeta {
+  background: rgba(255,255,255,0.1);
+  border-radius: 15px;
+  padding: 20px;
+  width: 270px;
+  backdrop-filter: blur(8px);
+  transition: transform 0.4s ease;
+}
+.tarjetas-musica .tarjeta:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 25px rgba(253,203,110,0.4);
+}
+/* ===== STICKERS DE FONDO ===== */
+.sticker-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* No interfiere con clics ni scroll */
+  z-index: -1;
+  overflow: hidden;
+  background: linear-gradient(135deg, #1a1a1a, #2d3436);
+}
+
+.sticker-bg img {
+  position: absolute;
+  opacity: 0.25; /* Discreto para no distraer */
+  filter: drop-shadow(0 0 10px rgba(255,255,255,0.1));
+  transition: opacity 0.3s;
+}
+
+.sticker-bg img:hover {
+  opacity: 0.4;
+}
+
+/* Posiciones personalizadas (puedes moverlas o añadir más) */
+.sticker1 { top: 5%; left: 3%; width: 120px; transform: rotate(-10deg); }
+.sticker2 { top: 10%; right: 5%; width: 140px; transform: rotate(12deg); }
+.sticker3 { bottom: 15%; left: 10%; width: 150px; transform: rotate(-8deg); }
+.sticker4 { bottom: 10%; right: 8%; width: 130px; transform: rotate(15deg); }
+.sticker5 { top: 30%; left: 10%; width: 100px; transform: rotate(-20deg); }
+.sticker6 { bottom: 50%; right: 10%; width: 90px; transform: rotate(10deg); }
+
+/* Opcional: sutil textura encima del fondo */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: url('img/paper-texture.png');
+  opacity: 0.05;
+  z-index: -2;
+  pointer-events: none;
+}
+/* ===== CABECERA CON FONDO DE IMAGEN ===== */
+#cabecera {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+  background: url("img/Portada3.gif") center/cover no-repeat fixed;
+}
+
+/* Sutil filtro oscuro encima para que el texto siempre se lea bien */
+#cabecera::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0); /* oscurece la imagen un poco */
+  backdrop-filter: blur(2px); /* da un leve desenfoque */
+  z-index: 1;
+}
+
+#cabecera .intro {
+  position: relative;
+  z-index: 2;
+}
+
+#cabecera .nombre {
+  font-family: "Poppins", sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-shadow: 0 0 10px rgba(255,255,255,0.6);
+}
+
+#cabecera .descripcion {
+  font-family: "Nunito", sans-serif;
+  font-size: 1.3rem;
+  opacity: 0.85;
+}
+#sobre-mi {
+  padding: 80px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#sobre-mi .sobre-mi-intro {
+  margin-bottom: 40px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #fff;
+  opacity: 0.85;
+}
+
+#sobre-mi #personalidad h3 {
+  font-size: 1.5rem;
+  color: #fdcb6e;
+  margin-bottom: 20px;
+}
+
+#sobre-mi .contacto {
+  margin-top: 50px;
+  font-size: 1rem;
+}
+
+#sobre-mi .contacto a {
+  color: #55efc4;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+#sobre-mi .contacto a:hover {
+  color: #fdcb6e;
+}
+

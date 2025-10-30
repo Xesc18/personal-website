@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="img/logo.png">
+  <title>Xesc Ferrer — Ficha Personal</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="sticker-bg">
+  <img src="img/choso.gif" alt="Sticker Choso" class="sticker1">
+  <img src="img/Denji.gif" alt="Sticker Denji" class="sticker2">
+  <img src="img/Rikka.gif" alt="Sticker Rikka" class="sticker3">
+  <img src="img/Zenitsu.gif" alt="Sticker Zenitsu" class="sticker4">
+  <img src="img/Korone.gif" alt="Sticker Korone" class="sticker5">
+  <img src="img/Nakiri.gif" alt="Sticker Nakiri" class="sticker6">
+</div>
+
+  <!-- Barra de navegación -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="#cabecera">Inicio</a></li>
+      <li><a href="#sobre-mi">Sobre mí</a></li>
+      <li><a href="#animes">Animes</a></li>
+      <li><a href="#personajes">Personajes</a></li>
+      <li><a href="#vtubers">Vtubers</a></li>
+      <li><a href="#pokémons">Pokémons</a></li>
+      <li><a href="#juegos">Juegos</a></li>
+      <li><a href="#libros">Libros</a></li>
+      <li><a href="#musica">Música</a></li>
+    </ul>
+<div class="navbar-marker"></div>
+
+  </nav>
+
+  <!-- Cabecera -->
+  <header id="cabecera">
+    <div class="intro">
+      <h1 class="nombre">Xesc Ferrer Mondragón</h1>
+      <p class="descripcion">(￣▽￣)ゞ</p>
+    </div>
+  </header>
+<!-- SOBRE MÍ -->
+<section id="sobre-mi">
+  <h2>Sobre mí</h2>
+  <div class="sobre-mi-intro">
+    <p>"¡Hola! Si estás aquí, es porque sientes curiosidad por mis gustos, hobbies, o tal vez simplemente quieres disfrutar de una página web bonita. Siéntete libre de explorar todo lo que quieras".</p>
+  </div>
+
+  <!-- Personalidad -->
+  <div id="personalidad">
+    <h3>Mi personalidad: INFJ</h3>
+    <div class="infj-card">
+      <p>El Idealista
+      <span class="destacado">"Prefiero navegar por los silencios del alma que perderme en el ruido del mundo."</span></p>
+    </div>
+    <br>
+    <a href="https://www.16personalities.com/es/test-de-personalidad" target="_blank" class="btn-mas">Descubre tu tipo</a>
+  </div>
+
+  <!-- Contacto -->
+  <div class="contacto">
+    <h3>Contacto</h3>
+    <p>Email: <a href="xescferrer9@gmail.com">xescferrer9@gmail.com</a></p>
+    <p>Redes: 
+      <a href="https://twitter.com" target="_blank">Twitter</a> | 
+      <a href="https://instagram.com" target="_blank">Instagram</a>
+    </p>
+  </div>
+</section>
+
+  <main>
+
+    <!-- Animes favoritos -->
+    <section id="animes">
+      <h2>Animes favoritos</h2>
+      <div class="tarjetas">
+        <div class="tarjeta" onclick="openModal('chuni')">
+          <img src="https://elrefugiodelosincomprendidos.wordpress.com/wp-content/uploads/2012/12/chuunibyou-demo-koi-ga-shitai-grande.jpg" alt="Chuunibyou" />
+          <h3>Chūnibyō Demo Koi ga Shitai!</h3>
+        </div>
+        <div class="tarjeta" onclick="openModal('sao')">
+          <img src="https://i.blogs.es/38c84d/sword-art-online-ha-sido-completado-por-esta-razon-los-fanaticos-estan-celebrando-a-kirito-el-7-de-noviembre-de-2024-compressed-1-/500_333.jpeg" alt="Sword Art Online" />
+          <h3>Sword Art Online</h3>
+        </div>
+        <div class="tarjeta" onclick="openModal('frieren')">
+          <img src="https://occ-0-8407-90.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABSSdSBMo_cJuIznPoxW1gKQlmrcuEYUmsLqHLZ5mCjS0Df5TEGvvMxh_DqUL0F7X1aDUEBDiYYPct6-OWD54Fsy-zBhzXK7Pd0F0.jpg?r=e24" alt="Frieren" />
+          <h3>Frieren</h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- Personajes favoritos -->
+    <section id="personajes">
+      <h2>Personajes favoritos</h2>
+      <div class="tarjetas">
+        <div class="tarjeta" onclick="openModal('naofumi')">
+          <img src="https://i.pinimg.com/736x/d7/61/ca/d761cacd0efa568a6ec79a274a9451da.jpg" alt="Naofumi" />
+          <h3>Naofumi</h3>
+        </div>
+        <div class="tarjeta" onclick="openModal('tamaki')">
+          <img src="https://preview.redd.it/day-22-what-are-your-favorite-headcanons-about-tamaki-v0-nm77chdre8nd1.jpg?width=640&crop=smart&auto=webp&s=039bcc02a38983ca100ab3986c3bb4f7c696eb70" alt="Tamaki" />
+          <h3>Tamaki</h3>
+        </div>
+        <div class="tarjeta" onclick="openModal('yuta')">
+          <img src="https://media.tenor.com/N9n5uF3mhCQAAAAe/jjk0-yuta.png" alt="Yuta" />
+          <h3>Yuta</h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- Vtubers favoritas -->
+    <section id="vtubers">
+      <h2>Vtubers favoritas</h2>
+      <div class="tarjetas">
+        <div class="tarjeta">
+          <img src="img/Aqua.png" alt="Minato Aqua" />
+          <h3>Minato Aqua</h3>
+          <p>Líder de Manji Gumi</p>
+          <a href="https://www.youtube.com/@MinatoAqua" target="_blank" class="btn-compra">Canal YouTube</a>
+        </div>
+        <div class="tarjeta">
+          <img src="img/Ayame.png" alt="Nakiri Ayame" />
+          <h3>Nakiri Ayame</h3>
+          <p>Segunda al mando</p>
+          <a href="https://www.youtube.com/@NakiriAyame" target="_blank" class="btn-compra">Canal YouTube</a>
+        </div>
+        <div class="tarjeta">
+          <img src="img/Shion.png" alt="Murasaki Shion" />
+          <h3>Murasaki Shion</h3>
+          <p>Subordinada</p>
+          <a href="https://www.youtube.com/@MurasakiShion" target="_blank" class="btn-compra">Canal YouTube</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mi equipo pokémon-->
+    <section id="pokémons">
+      <h2>Mi equipo pokémon</h2>
+      <div class="tarjetas">
+        <div class="tarjeta">
+          <img src="img/Piplup.png" alt="Piplup" />
+          <h3>Piplup</h3>
+        </div>
+        <div class="tarjeta">
+          <img src="img/Samurot.png" alt="Samurot" />
+          <h3>Samurot</h3>
+        </div>
+        <div class="tarjeta">
+          <img src="img/Salamence.png" alt="Salamence" />
+          <h3>Salamence</h3>
+        </div>
+        <div class="tarjeta">
+          <img src="img/Ceruledge.png" alt="Ceruledge" />
+          <h3>Ceruledge</h3>
+        </div>
+        <div class="tarjeta">
+          <img src="img/Corviknight.png" alt="Corviknight" />
+          <h3>Corviknight</h3>
+        </div>
+        <div class="tarjeta">
+          <img src="img/Corviknight2.png" alt="Corviknight2" />
+          <h3>Corviknight</h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- Juegos favoritos -->
+    <section id="juegos">
+      <h2>Juegos favoritos</h2>
+      <div class="tarjetas">
+        <div class="tarjeta"><h3>Genshin Impact</h3><p>Aventura y estética envolvente.</p></div>
+        <div class="tarjeta"><h3>Honkai: Star Rail</h3><p>Personajes increíbles y lore profundo.</p></div>
+        <div class="tarjeta"><h3>Pokémon</h3><p>Exploración y nostalgia infinita.</p></div>
+        <div class="tarjeta"><h3>Smash Bros Ultimate</h3><p>Caos divertido y competencia.</p></div>
+        <div class="tarjeta"><h3>Zelda: Breath of the Wild</h3><p>Libertad y belleza inmersiva.</p></div>
+      </div>
+    </section>
+
+    <!-- Libros -->
+    <section id="libros">
+      <h2>Libros que he escrito</h2>
+      <ul>
+        <li>
+          <strong>"Entre sombras y escamas"</strong> — El canto de los silenciados.
+        </li>
+      </ul>
+      <a href="https://amzn.eu/d/4qT8U8k" target="_blank" class="btn-compra">Comprar libro</a>
+    </section>
+
+    <!-- Música favorita -->
+    <section id="musica">
+  <h2>Música favorita</h2>
+  <div class="tarjetas-musica">
+    <div class="tarjeta">
+      <img src="img/Show.jpg" alt="Ado Show" />
+      <h3>【Ado】Show 唱</h3>
+      <audio controls>
+        <source src="audio/ado Show.mp3" type="audio/mpeg">
+        Tu navegador no soporta audio.
+      </audio>
+    </div>
+    <div class="tarjeta">
+      <img src="img/Cover.jpg" alt="Eve Fight Song" />
+      <h3>【Eve】Fight Song</h3>
+      <audio controls>
+        <source src="audio/Fight Song.mp3" type="audio/mpeg">
+        Tu navegador no soporta audio.
+      </audio>
+    </div>
+    <div class="tarjeta">
+      <img src="img/Naotori.jpg" alt="Naotori Absolute Zero" />
+      <h3>【Naotori】Absolute Zero</h3>
+      <audio controls>
+        <source src="audio/Natori Absolute Zero.mp3" type="audio/mpeg">
+        Tu navegador no soporta audio.
+      </audio>
+    </div>
+  </div>
+</section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="chibis"> 
+      <img src="https://media1.tenor.com/m/cRs4lnEWw48AAAAC/everknight-evernight.gif" alt="Evernight bailando" />
+      <img src="https://i.pinimg.com/originals/da/b1/89/dab189631819af7d3991deb6a2f0bb3b.gif" alt="Mumei bailando" />
+      <img src="https://upload-os-bbs.hoyolab.com/upload/2023/07/20/84636894/74c86c2cb351b861d73b048152ce209b_8441944010589096683.gif" alt="Paimon bailando" />
+    </div>
+    <p>✧ Hecho con amor por <strong>ᗜ˰ᗜ ✧Xesc</strong> ✧</p>
+  </footer>
+
+  <!-- MODALES -->
+  <!-- Ejemplo de modal para Chuunibyou -->
+  <div id="modal-chuni" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('chuni')">&times;</span>
+      <h3>Chūnibyō Demo Koi ga Shitai!</h3>
+      <p>Comedia romántica sobre adolescentes que viven en su propio mundo de fantasía y sueños exagerados.</p>
+      <img src="https://elrefugiodelosincomprendidos.wordpress.com/wp-content/uploads/2012/12/chuunibyou-demo-koi-ga-shitai-grande.jpg" alt="Chuunibyou">
+    </div>
+  </div>
+  <div id="modal-sao" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('sao')">&times;</span>
+      <h3>Sword Art Online</h3>
+      <p>Aventura y romance en mundos virtuales peligrosos.</p>
+      <img src="https://i.blogs.es/38c84d/sword-art-online-ha-sido-completado-por-esta-razon-los-fanaticos-estan-celebrando-a-kirito-el-7-de-noviembre-de-2024-compressed-1-/500_333.jpeg" alt="SAO">
+    </div>
+  </div>
+  <div id="modal-frieren" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('frieren')">&times;</span>
+      <h3>Frieren</h3>
+      <p>Una maga elfa que busca comprender las emociones humanas tras la muerte de sus compañeros de aventura.</p>
+      <img src="https://occ-0-8407-90.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABSSdSBMo_cJuIznPoxW1gKQlmrcuEYUmsLqHLZ5mCjS0Df5TEGvvMxh_DqUL0F7X1aDUEBDiYYPct6-OWD54Fsy-zBhzXK7Pd0F0.jpg?r=e24" alt="Frieren">
+    </div>
+  </div>
+
+  <!-- Modales Personajes -->
+  <div id="modal-naofumi" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('naofumi')">&times;</span>
+      <h3>Naofumi</h3>
+      <p>El héroe que protege su mundo mientras aprende sobre confianza y lealtad.</p>
+      <img src="https://i.pinimg.com/736x/d7/61/ca/d761cacd0efa568a6ec79a274a9451da.jpg" alt="Naofumi">
+    </div>
+  </div>
+  <div id="modal-tamaki" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('tamaki')">&times;</span>
+      <h3>Tamaki</h3>
+      <p>Carismático y encantador, siempre buscando proteger a sus amigos.</p>
+      <img src="https://preview.redd.it/day-22-what-are-your-favorite-headcanons-about-tamaki-v0-nm77chdre8nd1.jpg?width=640&crop=smart&auto=webp&s=039bcc02a38983ca100ab3986c3bb4f7c696eb70" alt="Tamaki">
+    </div>
+  </div>
+  <div id="modal-yuta" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('yuta')">&times;</span>
+      <h3>Yuta</h3>
+      <p>Joven con gran potencial y fuerza interior que enfrenta sus miedos.</p>
+      <img src="https://media.tenor.com/N9n5uF3mhCQAAAAe/jjk0-yuta.png" alt="Yuta">
+    </div>
+  </div>
+
+  <!-- SCRIPT MODALES -->
+  <script>
+    function openModal(id) {
+      document.getElementById("modal-" + id).style.display = "flex";
+    }
+    function closeModal(id) {
+      document.getElementById("modal-" + id).style.display = "none";
+    }
+  </script>
+<script src="javascript.js"></script>
+</body>
+</html>
+
